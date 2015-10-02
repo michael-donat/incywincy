@@ -27,6 +27,7 @@ IncyWincy is still in his tender teens, as such he doesn't yet understand few th
 
   - he's not nice to web and completely ignores robots.txt
   - he doesn't consider HTML 'base href' tag and takes all locations relatively to the context
+  - he does not check for canonical link in the DOM so will go over the same page if url is different
   - he's also been told to ignore # parts of locations
   - he only climbs html waterspouts, no javascript
   - he's normally told to only consider http(s) protocol, will ignore others
