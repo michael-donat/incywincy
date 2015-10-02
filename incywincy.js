@@ -19,7 +19,7 @@ spider.go(function(err, result) {
   console.log('STATIC   -----  ')
   console.log('\t'+result.assets.join('\n\t'))
 
-  if (err.message == 'timeout') {
+  if (err && err.message == 'timeout') {
     console.log('TIMEOUT REACHED   -----  ')
     process.exit(1)
   }
