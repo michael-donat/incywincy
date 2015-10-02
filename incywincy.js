@@ -12,10 +12,15 @@ argv.url = argv._[0]
 var spider = new Spider(argv.url, argv);
 
 spider.go(function(err, result) {
-  console.log('  -----  INTERNAL  -----  ')
-  console.log(result.origin)
-  console.log('  -----  EXTERNAL  -----  ')
-  console.log(result.external)
-  console.log('  -----   STATIC   -----  ')
-  console.log(result.assets)
+  console.log('INTERNAL  -----  ')
+  console.log('\t'+result.origin.join('\n\t'))
+  console.log('EXTERNAL  -----  ')
+  console.log('\t'+result.external.join('\n\t'))
+  console.log('STATIC   -----  ')
+  console.log('\t'+result.assets.join('\n\t'))
+
+  if (err.message == 'timeout') {
+    console.log('TIMEOUT REACHED   -----  ')
+    process.exit(1)
+  }
 });
