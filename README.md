@@ -6,19 +6,19 @@ Given a start URL it will go climbing to tell you what is internally or external
 
 ## Get it
 ```
-  git@github.com:michael-donat/incywincy.git
-  cd incywincy
-  make
+git clone git@github.com:michael-donat/incywincy.git
+cd incywincy
+make
 ```
 ## Test it
 ```
-  make test
+make test
 ```
 ## Make it work
 ```
-  node ./incywincy.js
+node ./incywincy.js
 
-  node ./incywincy.js http://michael-donat.github.io
+node ./incywincy.js http://michael-donat.github.io
 ```
 
 ## Caveats
@@ -30,3 +30,4 @@ IncyWincy is still in his tender teens, as such he doesn't yet understand few th
   - he's also been told to ignore # parts of locations
   - he only climbs html waterspouts, no javascript
   - he's normally told to only consider http(s) protocol, will ignore others
+  - he weaves plain text webs, no json, xml or other formats
