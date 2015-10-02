@@ -31,3 +31,9 @@ IncyWincy is still in his tender teens, as such he doesn't yet understand few th
   - he only climbs html waterspouts, no javascript
   - he's normally told to only consider http(s) protocol, will ignore others
   - he weaves plain text webs, no json, xml or other formats
+
+## Notes
+
+Getting node services up/down is super quick, as such the effort required to classically unit test the async parts of the code was not worth the time, instead, an outside-in approach has been followed with small mock server in the background to verify results.
+
+There is also the unanswered question of why the queue drain callback isn't fired, there is a workaround in place where scheduled function checks for the queue to be empty/idle periodically - I will go finding out what's wrong but this will take me over the target 2hrs of fun.
