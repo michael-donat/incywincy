@@ -30,7 +30,7 @@ IncyWincy is still in his tender teens, as such he doesn't yet understand few th
   - he does not check for canonical link in the DOM so will go over the same page if url is different
   - he's also been told to ignore # parts of locations
   - he only climbs html waterspouts, no javascript
-  - he's normally told to only consider http(s) protocol, will ignore others
+  - he's normally told to only consider http(s) protocol, will ignore other
   - he weaves plain text webs, no json, xml or other formats
 
 ## Notes
